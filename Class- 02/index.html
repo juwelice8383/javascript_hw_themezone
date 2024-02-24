@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class- 02 Home Work</title>
+</head>
+
+<body>
+
+  <p id="test"></p>
+  <script>
+    //-------------If Statement-------------------//
+
+    var age = 5;
+    if (age < 18) {
+      document.write("Sorry dear!<br> You are not eligible for voting this year.");
+    }
+    if (age >= 18) {
+      document.write("Congratulation! You are eligible for voting.");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+
+    //-------------If else Statement-------------------//
+
+    var discount = 10;
+
+    if (discount >= 50) {
+      document.write("Hurry Up! This is the pefect time to do shopping.")
+    }
+    else {
+      document.write("Alert! <br> Don't go for shopping now otherwise your wife will empty your wallet.");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    //-------------If else if Statement-------------------//
+
+    var weight = 60;
+
+    if (weight <= 55) {
+      document.write("You should eat more healthy food.");
+    } else if (weight >= 75) {
+      document.write(" Hey! <br> You should go to Gym.");
+    }
+    else {
+      document.write("Good Job! <br> Keep maintaining this routine.")
+    }
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    //-------------Switch Statement-------------------//
+
+    var dice = 6;
+
+    switch (dice) {
+
+      case 0:
+        document.write("Through dice carefully");
+        break;
+
+      case 1:
+        document.write("Your dice number is 1");
+        break;
+
+      case 2:
+        document.write("Your dice number is 2");
+        break;
+
+      case 3:
+        document.write("Your dice number is 3");
+        break;
+
+      case 4:
+        document.write("Your dice number is 4");
+        break;
+
+      case 5:
+        document.write("Your dice number is 5");
+        break;
+
+      case 6:
+        document.write("Awesome! You got top number on dice");
+        break;
+    }
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    //-------------Function-------------------//
+
+    function name(admisson_roll = 420) {
+      document.write("Hey Juwel! You have passed");
+    }
+    name();
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    //-------------Function-------------------//   
+
+   var day;
+   switch(new Date().getDay()){
+
+   
+    case 0:
+    day= "Sunday";
+    break;
+
+    case 1:
+    day= "Monday";
+    break;
+
+    case 2:
+    day= "Tuesday";
+    break;
+
+    case 3:
+    day= "Wednesday";
+    break;
+
+    case 4:
+    day= "Thursday";
+    break;
+
+    case 5:
+    day= "Friday";
+    break;
+
+    case 6:
+    day= "Saturday";
+    break;
+   }
+document.getElementById("test").innerHTML = "Today is "+ day;
+  </script>
+
+</body>
+
+</html>
